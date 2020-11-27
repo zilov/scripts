@@ -1,0 +1,54 @@
+/home/dzilov/soft/miniconda3/bin/quast -o /home/dzilov/scripts/quast_runner/NC_0100/NC_0100 /home/dzilov/scripts/quast_runner/NC_0100.fna
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-4.15.0-101-generic-x86_64-with-debian-buster-sid (linux_64)
+  Python version: 3.7.7
+  CPUs number: 192
+
+Started: 2020-08-12 15:19:11
+
+Logging to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/quast.log
+NOTICE: Maximum number of threads is set to 48 (use --threads option to set it manually)
+
+CWD: /home/dzilov/scripts/quast_runner
+Main parameters: 
+  MODE: default, threads: 48, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Contigs:
+  Pre-processing...
+  /home/dzilov/scripts/quast_runner/NC_0100.fna ==> NC_0100
+
+2020-08-12 15:19:11
+Running Basic statistics processor...
+  Contig files: 
+    NC_0100
+  Calculating N50 and L50...
+    NC_0100, N50 = 2080931, L50 = 1, Total length = 2080931, GC % = 37.08, # N's per 100 kbp =  0.00
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2020-08-12 15:19:11
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 1: Creating Icarus viewers...
+Done
+
+2020-08-12 15:19:11
+RESULTS:
+  Text versions of total report are saved to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/report.html
+  Icarus (contig browser) is saved to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/icarus.html
+  Log is saved to /home/dzilov/scripts/quast_runner/NC_0100/NC_0100/quast.log
+
+Finished: 2020-08-12 15:19:11
+Elapsed time: 0:00:00.351612
+NOTICEs: 2; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

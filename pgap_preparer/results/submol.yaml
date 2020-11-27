@@ -1,0 +1,19 @@
+topology: 'linear'
+organism:
+    scientific_name: 'Escherichia coli'
+contact_info:
+    last_name: 'Zilov'
+    first_name: 'Danil'
+    email: 'zilov@scamt-itmo.ru'
+    organization: 'SCAMT Institute, ITMO University'
+    department: 'Applied Genomics Laboratory'
+    street: '9, Lomonosova street'
+    city: 'Saint-Petersburg'
+    postal_code: '191002'
+    country: 'Russian Federation'
+
+authors:
+    -author:
+        first_name: 'Danil'
+        last_name: 'Zilov'
+            

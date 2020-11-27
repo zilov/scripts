@@ -1,0 +1,7 @@
+fasta:
+    class: File
+    location: /home/dzilov/scripts/pgap_preparer/results/scaffolds_pp.fasta
+submol:
+  class: File
+  location: /home/dzilov/scripts/pgap_preparer/results/submol.yaml
+    
