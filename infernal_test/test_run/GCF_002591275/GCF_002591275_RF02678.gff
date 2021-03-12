@@ -1,0 +1,9 @@
+#seqid	source	e_value	score	start	stop	strand	description
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	1.7	17.9	756696	756779	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	3.6	16.6	3608814	3608719	-	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	3.8	16.5	4149595	4149672	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	5.3	15.9	1606403	1606323	-	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	6.4	15.6	335459	335365	-	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	6.9	15.4	1286247	1286332	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	8.8	15.0	1495696	1495771	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Hatchet  [CLEN=162] RF02678	9.8	14.8	164222	164304	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c

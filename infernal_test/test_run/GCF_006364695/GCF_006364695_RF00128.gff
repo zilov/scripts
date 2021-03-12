@@ -1,0 +1,4 @@
+#seqid	source	e_value	score	start	stop	strand	description
+NZ_CP041002.1	GlmY_tke1  [CLEN=163] RF00128	5.7e-34	145.5	3061307	3061160	-	Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+NZ_CP041002.1	GlmY_tke1  [CLEN=163] RF00128	9e-14	66.8	4520355	4520503	+	Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+NZ_CP041002.1	GlmY_tke1  [CLEN=163] RF00128	8.3	12.4	3990198	3990110	-	Escherichia coli strain FDAARGOS_772 chromosome, complete geno

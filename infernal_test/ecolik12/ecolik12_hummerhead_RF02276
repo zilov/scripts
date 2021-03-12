@@ -1,0 +1,171 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF02276.cm
+# target sequence database:              /media/eternus1/nfs/projects/shared/ecoli_ref.fasta
+# output directed to file:               ./ecolik12/ecolik12_hummerhead_RF02276
+# number of worker threads:              192
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Hammerhead_II  [CLEN=67]
+Accession:   RF02276
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+ ------ inclusion threshold ------
+  (1) ?     0.046   23.5   0.0  NC_000913.3  603372  603487 +  cm    no 0.47  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (2) ?     0.073   22.7   0.0  NC_000913.3 4190354 4190296 -  cm    no 0.46  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (3) ?       1.6   17.5   0.0  NC_000913.3   90852   90915 +  cm    no 0.58  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (4) ?       1.6   17.5   0.0  NC_000913.3  697509  697434 -  cm    no 0.47  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (5) ?         3   16.4   0.0  NC_000913.3  242677  242635 -  cm    no 0.51  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (6) ?         5   15.6   0.0  NC_000913.3 1769650 1769578 -  cm    no 0.55  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (7) ?       5.9   15.3   0.0  NC_000913.3  933565  933508 -  cm    no 0.47  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (8) ?       7.8   14.9   0.0  NC_000913.3  853386  853358 -  cm    no 0.55  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (9) ?       8.9   14.6   0.0  NC_000913.3 4323033 4322942 -  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (10) ?        10   14.5   0.0  NC_000913.3 3133551 3133606 +  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+
+
+Hit alignments:
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) ?     0.046   23.5   0.0  cm        1       67 []      603372      603487 + .. 0.93    no 0.47
+
+                                                                                            NC
+                       :((,,,,<<<<<<____.........____>>>>>>,<<~~~~~~>>,,,,,,,....)):::::::: CS
+  Hammerhead_II      1 AgGCGAAACgccCccgc.........uuggGggcGUCug*[18]*caCUGAUGA....GcAGCCaAag 67    
+                       A::CGAAAC::C:C+++         U  G:G::GU U:      :ACUGAUGA    ::AG C AA+
+    NC_000913.3 603372 AUCCGAAACCGCUCUCAuccauucgaUGAGAGCGGUUUU*[54]*GACUGAUGAagucGCAGACCAAA 603487
+                       ***************999999999998889******987...9..79********************* PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?     0.073   22.7   0.0  cm        1       67 []     4190354     4190296 - .. 0.90    no 0.46
+
+                                                      v        v                     NC
+                        :((,,,,<<<<<<________>>>>>>,<<<<~~~~~~>>>>,,,,,,,.)):::::::: CS
+  Hammerhead_II       1 AgGCGAAACgccCccgcuuggGggcGUCugCC*[14]*GGcaCUGAUGA.GcAGCCaAag 67     
+                         GGCGAAAC:C:CC+ +   GG:G:GU  : :      : : CUGA GA GC GC  A  
+    NC_000913.3 4190354 UGGCGAAACCCACCUUA--AGGUGGGUUUUGU*[ 7]*AGGGCUGAGGAaGCUGCUUAUU 4190296
+                        ***************99..********87655...7..5567****************** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       1.6   17.5   0.0  cm        1       67 []       90852       90915 + .. 0.93    no 0.58
+
+                       v        v            v     vvvv   v     v    vvvv        v         NC
+                      :((,,,,<<<<<<________>>>.>>>,<<<<<<<<<___>>->>>>>>>,,,,,,,)):::::::: CS
+  Hammerhead_II     1 AgGCGAAACgccCccgcuuggGgg.cGUCugCCggGcgUGGcgGCccGGcaCUGAUGAGcAGCCaAag 67   
+                        G GAAA : :CC + +U  G:  : UC    :GG : GG:  CC:++ ACUGA GAG AGC  AA+
+    NC_000913.3 90852 GCGUGAAAACAGCCGCGGUCCGCAaGUUC----CGGCAGGGUUACCGAUGACUGAAGAGCAGCUCAAA 90915
+                      ********9988888887777887799**....***999***************************** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       1.6   17.5   0.0  cm        1       67 []      697509      697434 - .. 0.86    no 0.47
+
+                                                                                 NC
+                       :((,,,,<<<<<<____......____>>>>>>,~~~~~~,,,,,,,)):::::::: CS
+  Hammerhead_II      1 AgGCGAAACgccCccgc......uuggGggcGUC*[22]*CUGAUGAGcAGCCaAag 67    
+                       A:GCGAAAC::CCCCG        +GGGG::GU       CUGAU  G:AG  A ++
+    NC_000913.3 697509 AUGCGAAACAGCCCCGGugaaauCCGGGGCUGUU*[25]*CUGAUAUGCAGUAAGGA 697434
+                       ***************999999999999***9994...7..*****77********** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?         3   16.4   0.0  cm        1       67 []      242677      242635 - .. 0.86    no 0.51
+
+                                                                       NC
+                       :((,,,,~~~~~~,<<<<<~~~~~~>>>>>,,,,,,,)):::::::: CS
+  Hammerhead_II      1 AgGCGAA*[20]*CugCCg*[12]*cGGcaCUGAUGAGcAGCCaAag 67    
+                        GGCGAA      CUG::G      C::CACUGA+GAGCAG  A A 
+    NC_000913.3 242677 GGGCGAA*[ 0]*CUGUUG*[ 8]*CGGCACUGACGAGCAGAAAGAU 242635
+                       *******......666655...8..566779**************** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?         5   15.6   0.0  cm        1       67 []     1769650     1769578 - .. 0.91    no 0.55
+
+                               v                   v                                   NC
+                        :((,,,,<<<<<<____.____>>>>>>,<<<<<~~~~~~>>>>>,,,,,,,)):::::::: CS
+  Hammerhead_II       1 AgGCGAAACgccCccgc.uuggGggcGUCugCCg*[12]*cGGcaCUGAUGAGcAGCCaAag 67     
+                         :GC AA  G:C  +    U+G G:C  CUG:::      :::CACUGA GAG:AGC   AG
+    NC_000913.3 1769650 UUGCAAAAUGGCGAAUGcCUUGUGCCACCUGUUC*[17]*GGGCACUGAAGAGAAGCAUCAG 1769578
+                        *******999998777777777899999999886...9..79******************** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) ?       5.9   15.3   0.0  cm        1       67 []      933565      933508 - .. 0.78    no 0.47
+
+                                             v          v                    NC
+                       :((,,,,<<<<~~~~~~>>>>,<<<~~~~~~>>>,,,,,,,..)):::::::: CS
+  Hammerhead_II      1 AgGCGAAACgc*[12]*gcGUCugC*[16]*GcaCUGAUGA..GcAGCCaAag 67    
+                        : CGAAACG        CGUC ::      :: CUGAUGA   :AG CAAA 
+    NC_000913.3 933565 UAGCGAAACGG*[17]*UCGUCGCU*[ 0]*GGACUGAUGAcgCCAGGCAAAC 933508
+                       *********96...6..38888554......568********778******** PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?       7.8   14.9   0.0  cm        1       67 []      853386      853358 - .. 0.97    no 0.55
+
+                                                            NC
+                       :((,,,,~~~~~~~~~~~~,,,,,,,)):::::::: CS
+  Hammerhead_II      1 AgGCGAA*[20]**[23]*CUGAUGAGcAGCCaAag 67    
+                        :GCGAA              GA+GAG:AGCCA + 
+    NC_000913.3 853386 UUGCGAA*[ 2]**[ 5]*--GACGAGCAGCCAUGU 853358
+                       *******...*.....9....89************* PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) ?       8.9   14.6   0.0  cm        1       67 []     4323033     4322942 - .. 0.77    no 0.64
+
+                               v  v                           v  v   vvv              vvv                    NC
+                        :((,,,,<<<<<<____...............____>>>>>>,<<<<<<<.<~~~~~~>->>>>>>>,,,,,,,)):::::::: CS
+  Hammerhead_II       1 AgGCGAAACgccCccgc...............uuggGggcGUCugCCggG.c*[ 5]*gGCccGGcaCUGAUGAGcAGCCaAag 67     
+                         ::CGAA  G CC +++               U++GGG C  C::   :G :      : C:   ::CUGAUGA:: GCC AA+
+    NC_000913.3 4323033 CACCGAAAUGGCCGUCAcgcugcaaaucgccgUCUGGGGCACCGCGCUGGcG*[15]*CCCUUUGGCCUGAUGAGC-GCCGAAA 4322942
+                        ***********99998877766655555555555557777777776555555...9..445566789*********.******* PP
+
+>> NC_000913.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) ?        10   14.5   0.0  cm        1       67 []     3133551     3133606 + .. 0.71    no 0.61
+
+                                                                     NC
+                        :((,,,,<<<<~~~~~~>>>>~~~~~~,,,,,,,)):::::::: CS
+  Hammerhead_II       1 AgGCGAAACgc*[12]*gcGU*[23]*CUGAUGAGcAGCCaAag 67     
+                        A:GCGAAAC:C      G:GU       UGAUGAG:AG  A   
+    NC_000913.3 3133551 AAGCGAAACCC*[16]*GGGU*[ 8]*GUGAUGAGCAGAAAGCC 3133606
+                        *******8877...5..4566...4..79*************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (67 consensus positions)
+Target sequences:                                                1  (9283304 residues searched)
+Target sequences re-searched for truncated hits:                 1  (496 residues re-searched)
+Windows   passing  local HMM SSV           filter:           29420  (0.4836); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:             903  (0.01799); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             688  (0.01368); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             393  (0.009326); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             378  (0.008997); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             373  (0.003336); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              33  (0.000238); expected (0.0001)
+Total CM hits reported:                                         10  (7.174e-05); includes 0 truncated hit(s)
+
+# CPU time: 3.97u 2.57s 00:00:06.54 Elapsed: 00:00:00.49
+//
+[ok]

@@ -1,0 +1,61 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF02678.cm
+# target sequence database:              /mnt/data/ncbi/refseq/bacteria_single/fda_genomes/GCF_006364695.1_ASM636469v1_genomic.fna
+# output directed to file:               /home/dzilov/infernal_test/test_run/GCF_006364695/GCF_006364695_RF02678
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Hatchet  [CLEN=162]
+Accession:   RF02678
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+ ------ inclusion threshold ------
+  (1) ?       1.4   18.5   0.0  NZ_CP041002.1 5164663 5164786 +  cm    no 0.43  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+
+
+Hit alignments:
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) ?       1.4   18.5   0.0  cm        1      162 []     5164663     5164786 + .. 0.84    no 0.43
+
+                                                        vv   v       v   vv   v                        v         NC
+                        ::::::::::::::::::::::::::::::::<<<<<<_______>>>>>>---<<<<<----<<<----<<<<<<<<<<___      CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAAuCcuUgACAAgCcUGUGGGGCuUAUAguaAucacacauu      83     
+                        U  +U UGUG +G U GAG +A  A+AA UC+   AG  GAAAA+ CU   CA  C:U UGGG  U    G AA:::CA  U 
+  NZ_CP041002.1 5164663 UGUUUGUGUGUUGCUUGAGCCAGGAAAAUUCCUGGAGCGGAAAAACCUUAUCAGCCAUGUGGGUAUGG-GGAAAAUGCAAGUA      5164744
+                        ***********************9999999997777669*****999987777779*******99998.77777777776654      PP
+
+                              v                                 v NC
+                        ~~~~~~>>>>>>>>>>--->>>-------------->>>>> CS
+        Hatchet      84 *[44]*gugugaUuauauUaGUGCAGACgUUAAAAUCAgGc 162    
+                               UG:::UU U   A  GC+GA    AAAAU A:G 
+  NZ_CP041002.1 5164745 *[11]*AUGCGUUUUUUGCAUAGCGGA----AAAAUUAUGC 5164786
+                        ...6..6777777777777999**998....9********* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (162 consensus positions)
+Target sequences:                                                4  (10762074 residues searched)
+Target sequences re-searched for truncated hits:                 4  (3872 residues re-searched)
+Windows   passing  local HMM SSV           filter:           15357  (0.4221); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:            1489  (0.04697); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             287  (0.01008); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             208  (0.009113); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             185  (0.008011); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             205  (0.00379); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              15  (0.0001497); expected (0.0001)
+Total CM hits reported:                                          1  (1.152e-05); includes 0 truncated hit(s)
+
+# CPU time: 9.87u 0.17s 00:00:10.03 Elapsed: 00:00:09.98
+//
+[ok]

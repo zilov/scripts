@@ -1,0 +1,152 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF02678.cm
+# target sequence database:              /mnt/data/ncbi/refseq/bacteria_single/fda_genomes/GCF_002591275.1_ASM259127v1_genomic.fna
+# output directed to file:               /home/dzilov/infernal_test/test_run/GCF_002591275/GCF_002591275_RF02678
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Hatchet  [CLEN=162]
+Accession:   RF02678
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+ ------ inclusion threshold ------
+  (1) ?       1.7   17.9   0.1  NZ_CP023968.1  756696  756779 +  cm    no 0.30  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (2) ?       3.6   16.6   0.0  NZ_CP023968.1 3608814 3608719 -  cm    no 0.35  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (3) ?       3.8   16.5   0.0  NZ_CP023968.1 4149595 4149672 +  cm    no 0.46  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (4) ?       5.3   15.9   2.3  NZ_CP023968.1 1606403 1606323 -  cm    no 0.28  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (5) ?       6.4   15.6   0.0  NZ_CP023968.1  335459  335365 -  cm    no 0.36  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (6) ?       6.9   15.4   0.1  NZ_CP023968.1 1286247 1286332 +  cm    no 0.30  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (7) ?       8.8   15.0   0.0  NZ_CP023968.1 1495696 1495771 +  cm    no 0.34  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+  (8) ?       9.8   14.8   0.0  NZ_CP023968.1  164222  164304 +  cm    no 0.39  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+
+
+Hit alignments:
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) ?       1.7   17.9   0.1  cm        1      162 []      756696      756779 + .. 0.93    no 0.30
+
+                                                                              v v v                          v v  NC
+                       ::::::::::::::::::::::::::::::::<<<<<<._______>>>>>>---<<<<<----<~~~~~~>-------------->>>> CS
+        Hatchet      1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagG.UGAaAAuCcuUgACAAgCcUGUGGGG*[78]*UGCAGACgUUAAAAUCAgG 161   
+                       UU +U UGU  +++UAGA+             : AA:   GAAAAU :UU :  A C U UGGGG      UGCAGA  U AAAAU A G
+  NZ_CP023968.1 756696 UUUUUCUGUUUUAUUAGAU-------------CAAAAUgAGAAAAUAUUUUGGGAUCCUGUGGGG*[12]*UGCAGAUCUAAAAAUGAAG 756778
+                       ************9999998.............99999999*****9******************9...7..899**************** PP
+
+                       v NC
+                       > CS
+        Hatchet    162 c 162   
+                        
+  NZ_CP023968.1 756779 U 756779
+                       * PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?       3.6   16.6   0.0  cm        1      162 []     3608814     3608719 - .. 0.92    no 0.35
+
+                                                            v             v          v                     v    NC
+                        ::::::::::::::::::::::::::::::::<<<<<<______~~~~~>>>>>>---<<<<<----~~~~~~--------->>>>> CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAA*[1]*CcuUgACAAgCcUGUGGG*[85]*CgUUAAAAUCAgGc 162    
+                        UU  UUU UGA++  A + +      AA+UCUU:AA G GA+AA     C UU:A AA CC GU GG       +UUA AAUC GG 
+  NZ_CP023968.1 3608814 UUGAUUUUUGAUACCAUGAAU----GAAGUCUUUAACGCGAUAA*[7]*CUUUGAUAAGCCCGUUGG*[17]*UUUUAGAAUCAGGU 3608719
+                        ************998888876....9************999886..8..******************...9..5899********** PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       3.8   16.5   0.0  cm        1      162 []     4149595     4149672 + .. 0.94    no 0.46
+
+                                                                                                      NC
+                        ::::::::::::::::::::::::::::::::<<<<.<<_______>>>>>>---<<<<<----~~~~~~-->>>>> CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAa.gGUGAaAAuCcuUgACAAgCcUGUGGG*[92]*AUCAgGc 162    
+                        U+ +   GUG A +UAG +GA   +U A+   :: A :G GAAAAUC:U ::CAA  :U UGGG      AU A:  
+  NZ_CP023968.1 4149595 UCCUCCGGUGUACUUAGCUGAUCCGUCAGGUACUGAuUGAGAAAAUCAUUGGCAAUGAUCUGGG*[ 7]*AUGAUCG 4149672
+                        ***********************9999999999977268*************************...9..8****** PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       5.3   15.9   2.3  cm       64      156 ..     1606403     1606323 - .. 0.65    no 0.28
+
+                                     vv v                                         v vv                          NC
+                        <<<----<<<<<<<<<<___________________________________~~~~~~>>>>>>>>>>--->>>------------- CS
+        Hatchet      64 GCuUAUAguaAucacacauuauaaagaauucaagUAagaguaauaAuagAau*[12]*gugugaUuauauUaGUGCAGACgUUAAAA 156    
+                        G : A AG : ::  A AU + AAAGAA+U+A++  A+AG A+ +A ++AA+       U +:: : UAUU: UGCAGAC+UUAAAA
+  NZ_CP023968.1 1606403 GGAAAAAGAUUCG-GAUAUAUAAAAGAAAUUACA--AAAGGAGCCAGUAAAA*[ 3]*UUGACGAAUUAUUUCUGCAGACUUUAAAA 1606323
+                        *****99999999.44444444444444443333..3333333333333222...2..777999999******************** PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?       6.4   15.6   0.0  cm        1      162 []      335459      335365 - .. 0.95    no 0.36
+
+                                                                                               NC
+                       ::::::::::::::::::::::::::::::::<<<<<<_______>>>>>>---<<<<<-~~~~~~>>>>> CS
+        Hatchet      1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAAuCcuUgACAAgCcUGU*[97]*CAgGc 162   
+                          GU  GUGAAG+UA+ + +   +++ A C U:A   UGAAAA+   U:A AA C:UGU      CA:G 
+  NZ_CP023968.1 335459 GAUGUGAGUGAAGUUAACUUCC-CUAUCAACAUUA---UGAAAAA---UAAAAAGCUUGU*[37]*CAAGU 335365
+                       *****************99875.55677889****...9*****9...***********9...*..***** PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?       6.9   15.4   0.1  cm        1      162 []     1286247     1286332 + .. 0.93    no 0.30
+
+                                                          v               v     v                    v  NC
+                        :::::::::::::::::::::::.:::::::::<<<<<<_______>>>>>>---<<<<<----~~~~~~---->>>>> CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAa.uauaaaUCuUcAagGUGAaAAuCcuUgACAAgCcUGUGGG*[90]*AAAUCAgGc 162    
+                        + A+UUUGU  A+A A+ G AAA + +A+AU U  AA:: GA+AA ::UU  C A: :U:UGGG      AAAU:A: :
+  NZ_CP023968.1 1286247 CAAUUUUGUUGAUAAAAUGCAAAcACAAUAUAUGAAAAAAGAGAA-UUUUGCCUAUCUUAUGGG*[14]*AAAUUAAAA 1286332
+                        *********999998888888878889999999************.******************...9..89******* PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) ?       8.8   15.0   0.0  cm        1      162 []     1495696     1495771 + .. 0.90    no 0.34
+
+                                                            v           v           v                v     NC
+                        ::::::::::::::::::::::::::::::::<<<<<<.._______>>>>>>---<<<<<----~~~~~~------>>>>> CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagG..UGAaAAuCcuUgACAAgCcUGUGGG*[88]*UAAAAUCAgGc 162    
+                        ++A+ U G  A GAUA A+       AA+U +U:A: G  U AAAA+C :U:ACA :C:U UGGG       A AAU A:G:
+  NZ_CP023968.1 1495696 ACAUAUCGGUAGGAUAUAU-------AAGUUCUUAUGGuaUAAAAAACGAUAACA-CCAUUUGGG*[ 8]*GAUAAUUAUGG 1495771
+                        ********99999988886.......78999999999999999999999999996.*********...9..5679******* PP
+
+>> NZ_CP023968.1  Chryseobacterium indologenes strain FDAARGOS_379 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?       9.8   14.8   0.0  cm        1      162 []      164222      164304 + .. 0.94    no 0.39
+
+                                                                                                    NC
+                       ::::::::::::::::::::::::::::::::<<<<<<_______>>>>>>---<<<<<----~~~~~~-->>>>> CS
+        Hatchet      1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAAuCcuUgACAAgCcUGUGGG*[92]*AUCAgGc 162   
+                       + A+ UUGU A+  UAGAGG      AAA C UCA   UGA AA+   UGA AA:C U:  GG      AU:A G:
+  NZ_CP023968.1 164222 CAAUGUUGUUAU--UAGAGG------AAAACAUCAGUUUGACAAAGGUUGAUAACCUUACCGG*[21]*AUUAGGG 164304
+                       ******999877..888885......8999****************************98888...*..679**** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (162 consensus positions)
+Target sequences:                                                1  (9777654 residues searched)
+Target sequences re-searched for truncated hits:                 1  (968 residues re-searched)
+Windows   passing  local HMM SSV           filter:           27751  (0.8029); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:           10868  (0.369); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:            1352  (0.05395); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             961  (0.05183); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             795  (0.04291); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:            1031  (0.02135); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              89  (0.001179); expected (0.0001)
+Total CM hits reported:                                          8  (6.944e-05); includes 0 truncated hit(s)
+
+# CPU time: 51.24u 0.84s 00:00:52.08 Elapsed: 00:00:52.03
+//
+[ok]

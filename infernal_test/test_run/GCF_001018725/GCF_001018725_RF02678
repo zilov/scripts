@@ -1,0 +1,147 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF02678.cm
+# target sequence database:              /mnt/data/ncbi/refseq/bacteria_single/fda_genomes/GCF_001018725.2_ASM101872v2_genomic.fna
+# output directed to file:               /home/dzilov/infernal_test/test_run/GCF_001018725/GCF_001018725_RF02678
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Hatchet  [CLEN=162]
+Accession:   RF02678
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+ ------ inclusion threshold ------
+  (1) ?      0.94   18.1   0.0  NZ_CP026961.1  179184  179022 -  cm    no 0.39  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+  (2) ?         1   17.9   2.4  NZ_CP026961.1 1625106 1625262 +  cm    no 0.31  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+  (3) ?       5.4   14.9   0.0  NZ_CP026961.1  475133  475086 -  cm    no 0.27  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+  (4) ?       5.7   14.8   0.1  NZ_CP026961.1  775009  774951 -  cm    no 0.25  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+  (5) ?       6.3   14.6   5.4  NZ_CP026961.1 2604722 2604568 -  cm    no 0.32  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+  (6) ?       9.9   13.8   0.3  NZ_CP026961.1 1827845 1827924 +  cm    no 0.26  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete 
+
+
+Hit alignments:
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) ?      0.94   18.1   0.0  cm        1      162 []      179184      179022 - .. 0.85    no 0.39
+
+                                                                                                     v v    v     NC
+                       ::::::::::::::::::::::::::::::::<<<<<<.______~~~~~~>>>>>>---<<<<.<----<<<----<<<<<<<<<<___ CS
+        Hatchet      1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagG.UGAaAA*[ 1]*CcuUgACAAgCcU.GUGGGGCuUAUAguaAucacacauu 83    
+                       U A U UGUG  ++ A+ G     +U +  CUU:AA:G UGA+AA      C:UU:ACAA: :U GUGGGGC UAUA  : :CA: :A+ 
+  NZ_CP026961.1 179184 UAAAUCUGUGCCUUCAACGC---GUUCUUCCUUUAAAGgUGAUAA*[11]*CUUUGACAACGGUaGUGGGGCGUAUAU-UUACAAAUAAA 179094
+                       ************88777765...567888899******9***986...*..*************99***********5.55688888888 PP
+
+                                                                    v    v v                            NC
+                       ____________________________________________>>>>>>>>>>--->>>-------------->.>>>> CS
+        Hatchet     84 auaaagaauucaagUAagaguaauaAuagAaugucaaUauuuAUgugugaUuauauUaGUGCAGACgUUAAAAUC.AgGc 162   
+                       +U AAG AUU+A+G AA   UAAUAAU   + +UC   ++    : :UG: :  AU  GU CA    UU A  UC A: :
+  NZ_CP026961.1 179093 UUUAAGGAUUUACGCAAUUUUAAUAAUCCUUGUUCUGGUC----GAUUGUUAGGAUCUGUCCA----UUUAGGUCcACCG 179022
+                       9999999999888888888888888877777776666666....9999999999999***765....777778877**** PP
+
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?         1   17.9   2.4  cm        1      162 []     1625106     1625262 + .. 0.93    no 0.31
+
+                                                                           v     vv       v                      NC
+                        ::::::::::::::::::::::::::::::::~~~~~~---<<<<<----<<<----<<<<<<<<<<_____________________ CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCu*[19]*CAAgCcUGUGGGGCuUAUAguaAucacacauuauaaagaauucaagUAag 101    
+                        + A  U GU A+++UA+++      +++AUCU      CA :C:U     G :   A  AA:::CA A+ AUA  GAAU++A  U   
+  NZ_CP026961.1 1625106 AGAAAUCGUAAUAUUAAGUC-----AUUAUCU*[19]*CAUACAUU----GCAAUGA-CAAUAGCACAAGAUACUGAAUAUAUUUUGC 1625196
+                        ******************98.....5666666...7..9******9....**99977.8***************************** PP
+
+                                                         v       vv    v                     NC
+                        __________________________.......>>>>>>>>>>--->>>-------------->>>>> CS
+        Hatchet     102 aguaauaAuagAaugucaaUauuuAU.......gugugaUuauauUaGUGCAGACgUUAAAAUCAgGc 162    
+                         + A +AA  + +++ +AAU+U  AU        UG:::UU +A+U: UGCA ACGUUAAA   A:G:
+  NZ_CP026961.1 1625197 UAGAUGAACCAUUAAAUAAUUUAGAUaugaagcAUGCUGUUCAAAUUAUGCAAACGUUAAA--AAUGU 1625262
+                        **********************9999***********************************..7**** PP
+
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       5.4   14.9   0.0  cm        1      162 []      475133      475086 - .. 0.98    no 0.27
+
+                                                                                  NC
+                       ::::::::::::::::::::::::::::::::<<<<<<_______>>>>>>~~~~~~~ CS
+        Hatchet      1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAAuCcuUgA*[111]* 162   
+                           U UGUGA+GAUA+AG A    U+   CUU:AA: UGA+AA  :UU:A       
+  NZ_CP026961.1 475133 GAUAUGUGUGAUGAUAAAGUA----UUGCCCUUUAAUUUGAUAA-AAUUGA*[  2]* 475086
+                       *******************98....9******************.******....7.. PP
+
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       5.7   14.8   0.1  cm       75      133 ..      775009      774951 - .. 1.00    no 0.25
+
+                                                                                   NC
+                       <<<<<<_______________________________________________>>>>>> CS
+        Hatchet     75 ucacacauuauaaagaauucaagUAagaguaauaAuagAaugucaaUauuuAUguguga 133   
+                       :CA:A:AUU+U AA AA U+A+GUA  AG  +U+AU++ A++U++ U+U+UAU:U:UG:
+  NZ_CP026961.1 775009 UCAUAUAUUUUUAACAAGUUACGUACUAGCUGUCAUUAUAAUUUCGUUUCUAUAUAUGG 774951
+                       *********************************************************** PP
+
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?       6.3   14.6   5.4  cm        1      162 []     2604722     2604568 - .. 0.79    no 0.32
+
+                                                                                                   vvv   v  v    NC
+                        ::::::::::::::::::::::::::::::::<<<<<<_______...>>>>>>-..--<<<<<----<<<----<<<<<<<<<<___ CS
+        Hatchet       1 uuagUuuGUGAagaUAgaggaAauauaaaUCuUcAagGUGAaAAu...CcuUgAC..AAgCcUGUGGGGCuUAUAguaAucacacauu 83     
+                          A+   GU AAG UAGA   A ++U+ +U +U AAG UGAA+A+    CUU AC  AA       GG:C:UA A    U: :: AUU
+  NZ_CP026961.1 2604722 GAAUCAGGUAAAGGUAGAAUUAUAGUUCGUUCUAAAGUUGAAGAAgaaACUUUACgcAA------UGGACGUAAA-CAGUUAAUUAUU 2604642
+                        **************************************87765422339*****82233......389*****55.788999999999 PP
+
+                                                                    v  v   vvv                          NC
+                        ____________________________________________>>>>>>>>>>--->>>-------------->>>>> CS
+        Hatchet      84 auaaagaauucaagUAagaguaauaAuagAaugucaaUauuuAUgugugaUuauauUaGUGCAGACgUUAAAAUCAgGc 162    
+                        A  +A A+U CA +U A+   AA AA AG A  U+A UA      :: :A   + U :G:GC GAC   AAA U     
+  NZ_CP026961.1 2604641 ACUGAAAUUCCAUAUGAAGUGAACAAAAGUAGCUUAGUAAAACGUAUCGAUGAAUUACGUGCUGACAAAAAAGU----- 2604568
+                        999888888888888877777777777777666666666644446666664444445**********9999999..... PP
+
+>> NZ_CP026961.1  Staphylococcus aureus strain FDAARGOS_10 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?       9.9   13.8   0.3  cm       64      157 ..     1827845     1827924 + .. 0.87    no 0.26
+
+                         v                                                                              v        NC
+                        <<<----<<.<<<<<<<<_______________________________________________>>>>>>>>.>>--->>>------ CS
+        Hatchet      64 GCuUAUAgu.aAucacacauuauaaagaauucaagUAagaguaauaAuagAaugucaaUauuuAUgugugaUu.auauUaGUGCAGAC 149    
+                        G : AUA:U AAU:::A: UUA  AAG A                   ++A+U+U++A  U++AU:U:::AUU A: +U: UG  GAC
+  NZ_CP026961.1 1827845 GCAAAUAUUgAAUACAAUGUUACUAAGGAGC----------------CUUAUUUUUCAACUCCAUAUUGUAUUaAACAUUUUGGUGAC 1827916
+                        99*****886888888888888888888888................6778889999999999998888888868889********** PP
+
+                                 NC
+                        -------- CS
+        Hatchet     150 gUUAAAAU 157    
+                        +U AAAAU
+  NZ_CP026961.1 1827917 UUAAAAAU 1827924
+                        ******** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (162 consensus positions)
+Target sequences:                                                1  (5747734 residues searched)
+Target sequences re-searched for truncated hits:                 1  (968 residues re-searched)
+Windows   passing  local HMM SSV           filter:           19899  (0.9165); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:           13508  (0.6846); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:            1479  (0.1008); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             955  (0.09974); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             770  (0.0822); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:            1269  (0.04569); expected (0.005)
+Envelopes passing  local CM  CYK           filter:             111  (0.002495); expected (0.0001)
+Total CM hits reported:                                          6  (0.0001152); includes 0 truncated hit(s)
+
+# CPU time: 68.50u 1.16s 00:01:09.66 Elapsed: 00:01:09.64
+//
+[ok]

@@ -1,0 +1,94 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF00128.cm
+# target sequence database:              /mnt/data/ncbi/refseq/bacteria_single/fda_genomes/GCF_006364695.1_ASM636469v1_genomic.fna
+# output directed to file:               /home/dzilov/infernal_test/test_run/GCF_006364695/GCF_006364695_RF00128
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       GlmY_tke1  [CLEN=163]
+Accession:   RF00128
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   5.7e-34  145.5   0.0  NZ_CP041002.1 3061307 3061160 -  cm    no 0.51  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+  (2) !     9e-14   66.8   0.0  NZ_CP041002.1 4520355 4520503 +  cm    no 0.49  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+ ------ inclusion threshold ------
+  (3) ?       8.3   12.4   0.0  NZ_CP041002.1 3990198 3990110 -  cm    no 0.46  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+
+
+Hit alignments:
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   5.7e-34  145.5   0.0  cm        1      163 []     3061307     3061160 - .. 0.99    no 0.51
+
+                                                                                                                 NC
+                        ::::<<<<<<<<------<<<<<<-<<<_____________________>>>>>>>>>------>>>>>>->>--------((((((( CS
+      GlmY_tke1       1 AGUuGCUCAUUCAcCUuuuUAUGacaGccccCuauuuaGcagAauaugcgCuuCAUAaacuauCGAAUGAuGCcuAAGaauGGuGCCU 88     
+                        AGU GCUCAUUCACC ++UUAUG:CAGC   C++UU +G     +A G+GCU:CAUAAA+U UCGAAUGA+GC+ AA  A+GGUGCCU
+  NZ_CP041002.1 3061307 AGUGGCUCAUUCACCGACUUAUGUCAGC---CCCUUCGG-----GACGUGCUACAUAAAAU-UCGAAUGACGCACAA-CAAGGUGCCU 3061230
+                        ****************************...9999****.....9****************.***************.9********* PP
+
+                                                                                                    NC
+                        ,,<<<<<-------<<<<<<______________>>>>>>------>>>>>,<<<_____>>>)))))))::::: CS
+      GlmY_tke1      89 auCGuCCAaCuaACuGaUAacauguGaauacaCuuUAuCaAaCAUCGGaCGAcACGUuGAGUgAGGCaCCGCCUa 163    
+                        ++CG:CCAACU+ CUGAUA:CA   G+ UA +CU:UAUCAA CAUCGG:CGA:ACGU GAGU:AGGCACCGCCU+
+  NZ_CP041002.1 3061229 GCCGUCCAACUU-CUGAUAUCA---GCGUA-GCUAUAUCAACCAUCGGGCGAAACGUCGAGUUAGGCACCGCCUU 3061160
+                        ************.*********...99999.******************************************** PP
+
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !     9e-14   66.8   0.0  cm        1      163 []     4520355     4520503 + .. 0.93    no 0.49
+
+                                               v v            vv                                         v       NC
+                        ::::<<<<<<<<------<<<<<<-<<<__~~~~~~>>>>>>>>>------>>>>>>->>-----....---(((((((,,<<<<<-- CS
+      GlmY_tke1       1 AGUuGCUCAUUCAcCUuuuUAUGacaGccc*[19]*gCuuCAUAaacuauCGAAUGAuGCcuAAG....aauGGuGCCUauCGuCCAa 97     
+                        AG UGCUCAUUC +  U+UUAUG + GCC+      GC  CAUAAACU + GAAUGA+GC+ A      +A GGUGC:UAU GUCCA 
+  NZ_CP041002.1 4520355 AGAUGCUCAUUCCAUCUCUUAUGUUCGCCU*[ 4]*GCCUCAUAAACUCCGGAAUGACGCAGAGCcguuUACGGUGCUUAUCGUCCA- 4520439
+                        ************************999953...4..999**********************998777779****************5. PP
+
+                             v                        v            v v         v             NC
+                        -----<<<<<<______________>>>>>>------..>>>>>,<<<_____>>>)))))))::::: CS
+      GlmY_tke1      98 CuaACuGaUAacauguGaauacaCuuUAuCaAaCAUC..GGaCGAcACGUuGAGUgAGGCaCCGCCUa 163    
+                        CU AC GAU::C    G+ UA +C ::AUC  ACA C  GGAC   ACGUUGAGU A:GCACC  CU+
+  NZ_CP041002.1 4520440 CUGACAGAUGUC----GCUUAUGCCUCAUCAGACACCauGGACACAACGUUGAGUGAAGCACCCACUU 4520503
+                        6677*******9....899999***********999888***************************** PP
+
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       8.3   12.4   0.0  cm        1      163 []     3990198     3990110 - .. 0.94    no 0.46
+
+                                 vvv         v   v                         v  v         vvv                      NC
+                        ::::<<<<<<<<------<<<<<<-<<<_____________________>>>>>>>>>------>>>>>>->>----~~~~~~::::: CS
+      GlmY_tke1       1 AGUuGCUCAUUCAcCUuuuUAUGacaGccccCuauuuaGcagAauaugcgCuuCAUAaacuauCGAAUGAuGCcuAA*[81]*GCCUa 163    
+                        AGUUGC CA UC + U+ U:A GAC G:  CC+ UUUAGC+ A++ UG+:C UC U:A +U+ C   UG +GC+UA        CCU 
+  NZ_CP041002.1 3990198 AGUUGCUCACUCCAGUAAUCAAGACAGU-ACCAGUUUAGCGUAUGCUGUACGUCGUGAUAUUGC---UGGCGCAUAU*[11]*UCCUG 3990110
+                        *********999999*************.568999***********************999888...*******986...9..***** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (163 consensus positions)
+Target sequences:                                                4  (10762074 residues searched)
+Target sequences re-searched for truncated hits:                 4  (3248 residues re-searched)
+Windows   passing  local HMM SSV           filter:           19471  (0.4328); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:             343  (0.008931); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             339  (0.008828); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             117  (0.00333); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             116  (0.003295); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             108  (0.001913); expected (0.005)
+Envelopes passing  local CM  CYK           filter:               7  (7.45e-05); expected (0.0001)
+Total CM hits reported:                                          3  (3.586e-05); includes 0 truncated hit(s)
+
+# CPU time: 5.22u 0.05s 00:00:05.27 Elapsed: 00:00:05.20
+//
+[ok]

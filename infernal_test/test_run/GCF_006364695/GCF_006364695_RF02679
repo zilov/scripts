@@ -1,0 +1,93 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /media/eternus1/nfs/projects/shared/rybozymes_models/RF02679.cm
+# target sequence database:              /mnt/data/ncbi/refseq/bacteria_single/fda_genomes/GCF_006364695.1_ASM636469v1_genomic.fna
+# output directed to file:               /home/dzilov/infernal_test/test_run/GCF_006364695/GCF_006364695_RF02679
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Pistol  [CLEN=70]
+Accession:   RF02679
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+ ------ inclusion threshold ------
+  (1) ?      0.32   20.1   0.0  NZ_CP041002.1 5190041 5190079 +  cm    no 0.33  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+  (2) ?      0.33   20.1   0.0  NZ_CP041002.1 1246438 1246488 +  cm    no 0.49  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+  (3) ?       4.3   15.5   0.0  NZ_CP041002.1 4614671 4614621 -  cm    no 0.51  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+  (4) ?       4.9   15.3   0.0  NZ_CP041002.1   24414   24365 -  cm    no 0.48  Escherichia coli strain FDAARGOS_772 chromosome, complete geno
+
+
+Hit alignments:
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) ?      0.32   20.1   0.0  cm        1       70 []     5190041     5190079 + .. 0.96    no 0.33
+
+                                                              NC
+                        <<<<________>>>>-------<<<<~~~~~~>>>> CS
+         Pistol       1 acUCGUCuggGCGAguAUAAAuAcgCa*[39]*uGcg 70     
+                        ::UCGU+U++G GA::AUAAAUA:G::      ::C:
+  NZ_CP041002.1 5190041 CGUCGUUUAAGUGACGAUAAAUAUGUG*[ 8]*CACA 5190079
+                        *************************98...9..89** PP
+
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?      0.33   20.1   0.0  cm        1       70 []     1246438     1246488 + .. 0.93    no 0.49
+
+                                                                       NC
+                        <<<<________>>>>-------<<<<---------~~~~~~>>>> CS
+         Pistol       1 acUCGUCuggGCGAguAUAAAuAcgCaUUAgGCcca*[30]*uGcg 70     
+                        :C:CG+ + GGCG:G:  AA  A:GC:UUA+G + A      :GC:
+  NZ_CP041002.1 1246438 CCACGAGACGGCGUGGUAAACAAGGCUUUAAGAUGA*[11]*AGCC 1246488
+                        ****************9999999********97765...9..**** PP
+
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       4.3   15.5   0.0  cm        1       70 []     4614671     4614621 - .. 0.96    no 0.51
+
+                        v              v                        NC
+                        <<<<________>>>>-------.<<<<-~~~~~~>>>> CS
+         Pistol       1 acUCGUCuggGCGAguAUAAAuA.cgCaU*[38]*uGcg 70     
+                         ::CG+CU GGCG:: AUAAA+A CG AU      U CG
+  NZ_CP041002.1 4614671 GAACGACUCGGCGUUGAUAAACAaCGUAU*[18]*UGCG 4614621
+                        ***********************999997...9..999* PP
+
+>> NZ_CP041002.1  Escherichia coli strain FDAARGOS_772 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       4.9   15.3   0.0  cm        1       70 []       24414       24365 - .. 0.90    no 0.48
+
+                                             v                      v NC
+                      <<<<________>>>>-------<<<<----------~~~~~~>>>> CS
+         Pistol     1 acUCGUCuggGCGAguAUAAAuAcgCaUUAgGCccaG*[29]*uGcg 70   
+                      ::UCG C ++ CGA:: UAAA A GCAU A+GC++A       UGC 
+  NZ_CP041002.1 24414 CAUCG-CGAAUCGAUGCUAAAAAUGCAUCAAGCUUAU*[10]*UGCU 24365
+                      ****9.567777*********************9876...8..**** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (70 consensus positions)
+Target sequences:                                                4  (10762074 residues searched)
+Target sequences re-searched for truncated hits:                 4  (2256 residues re-searched)
+Windows   passing  local HMM SSV           filter:           22641  (0.3614); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:             421  (0.00744); expected (0.005)
+Windows   passing  local HMM Forward  bias filter:             411  (0.007259); expected (0.005)
+Windows   passing glocal HMM Forward       filter:             182  (0.003582); expected (0.005)
+Windows   passing glocal HMM Forward  bias filter:             180  (0.003535); expected (0.005)
+Envelopes passing glocal HMM envelope defn filter:             178  (0.001264); expected (0.005)
+Envelopes passing  local CM  CYK           filter:              33  (0.0002049); expected (0.0001)
+Total CM hits reported:                                          4  (1.774e-05); includes 0 truncated hit(s)
+
+# CPU time: 1.53u 0.00s 00:00:01.53 Elapsed: 00:00:01.48
+//
+[ok]

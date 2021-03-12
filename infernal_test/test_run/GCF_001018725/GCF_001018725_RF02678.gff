@@ -1,0 +1,7 @@
+#seqid	source	e_value	score	start	stop	strand	description
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	0.94	18.1	179184	179022	-	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	1	17.9	1625106	1625262	+	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	5.4	14.9	475133	475086	-	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	5.7	14.8	775009	774951	-	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	6.3	14.6	2604722	2604568	-	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Hatchet  [CLEN=162] RF02678	9.9	13.8	1827845	1827924	+	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete

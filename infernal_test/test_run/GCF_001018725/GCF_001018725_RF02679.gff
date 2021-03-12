@@ -1,0 +1,3 @@
+#seqid	source	e_value	score	start	stop	strand	description
+NZ_CP026961.1	Pistol  [CLEN=70] RF02679	0.49	18.2	1466162	1466104	-	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete
+NZ_CP026961.1	Pistol  [CLEN=70] RF02679	8.4	13.2	1224010	1224073	+	Staphylococcus aureus strain FDAARGOS_10 chromosome, complete

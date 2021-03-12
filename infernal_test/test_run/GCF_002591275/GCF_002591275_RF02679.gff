@@ -1,0 +1,4 @@
+#seqid	source	e_value	score	start	stop	strand	description
+NZ_CP023968.1	Pistol  [CLEN=70] RF02679	1.7	17.0	3112478	3112432	-	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Pistol  [CLEN=70] RF02679	4.9	15.1	4841684	4841635	-	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
+NZ_CP023968.1	Pistol  [CLEN=70] RF02679	7.4	14.4	1879909	1879960	+	Chryseobacterium indologenes strain FDAARGOS_379 chromosome, c
