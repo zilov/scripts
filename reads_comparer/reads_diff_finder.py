@@ -81,7 +81,7 @@ def main(settings):
                 header = header_and_seq[0][1:].split()[0] + f"_{tools_list[i]}"
                 sequence = header_and_seq[1]
                 fw.write(f">{header}\n{sequence}\n")
-
+    print(f"{n_reads} were trimmed!")
 
 if __name__ == '__main__':
 
