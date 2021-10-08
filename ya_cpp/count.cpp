@@ -53,7 +53,24 @@ int school_tables() {
     return 0;
 }
 
+int bum() {
+    int r, k, n;
+    cin >> r >> k >> n;
+    cout << r * n + (k * n) / 100 << " " << (k * n) % 100;
+    return 0;
+}
+
+int clocks() {
+    int s, h, min, sec;
+    cin >> s;
+    h = s / 3600;
+    min = (s - h * 3600) / 60;
+    sec = s - (h * 3600) - (min * 60); 
+    cout << h % 24 << ":" << min / 10 << min % 10 << ":" << sec / 10 << sec % 10;
+    return 0;
+}
+
 int main() {
-    school_tables();
+    clocks();
     return 0;
 }
